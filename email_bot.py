@@ -33,7 +33,7 @@ def spam_and_kill(from_title, to_email, to_name, number_of_mails):
     i+=1
 
     try:
-      print('ho raha hai')
+      
       smtpObj = smtplib.SMTP(host='smtp.gmail.com', port=587)
       smtpObj.ehlo(); smtpObj.starttls(); smtpObj.ehlo();  
       smtpObj.login(my_email, password)
